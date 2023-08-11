@@ -1,16 +1,19 @@
 body {
+		line-height: 1.42857143;
 		color: #40514E;
     margin: 0px;
 		text-align: center;
-		font-family: 'Merriweather', serif;
+		font-family:  'brandon-grotesque', 'HelveticaNeue-Light',"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 h1 {
-		font-size: 5.625rem;
-    margin-top: 0px;
-		font-family: 'Sacramento', cursive;
-		margin: 50px auto 0 auto;
-		color: #45b29a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5.625rem;
+	font-family: 'Sacramento', cursive;
+	margin: auto;
+	color: #45b29a;
 }
 
 h2 {
@@ -25,6 +28,7 @@ h3 {
 	font-family: 'brandon-grotesque', 'HelveticaNeue-Light',"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 	color: #45b29a;
 	font-weight: 500;
+	margin-bottom: 0;
 }
 
 hr {
@@ -37,13 +41,45 @@ hr {
 a {
 	color: #45b29a;
 	font-family: 'brandon-grotesque', 'HelveticaNeue-Light',"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-	margin: 10px 20px;
+	margin: 20px 20px;
 	text-decoration: none;
+	transition: all 0.5s ease-in-out;
 }
 
 a:hover {
 	color: #545454;
-	transition: all .3s ease-in-out
+	transition: all .8s ease-in-out;
+}
+
+header {
+	background-color: #e4f9f5;
+	padding: 3rem 0;
+}
+
+header .nav-list {
+	margin: 0;
+}
+
+#earth-holder {
+	background-color: #e4f9f5;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+#earth-holder img {
+	margin: 0 auto;
+	max-width: 800px;
+	overflow: hidden;
+	background-color:#e4f9f5;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.nav-list li a {
+	padding: 0;
+	margin: 10px;
+	font-weight: 400;
+	font-size: 1rem;
 }
 
 .p1 {
@@ -66,7 +102,7 @@ a:hover {
 .copy-right {
 	color: #45b29a;
 	font-size: 0.75rem;
-	padding: 20px 0px;
+	padding: 2.5rem 0 0;
 }
 
 .contact-msg {
@@ -83,29 +119,46 @@ a:hover {
 }
 
 
-.top-container {
+#title {
+		text-align: center;
 		position: relative;
     background-color: #e4f9f5;
-		padding-top: 100px;
-    margin-bottom: 50px; 
+		padding-top: 0;
+    margin-bottom: 0px; 
+}
+
+@media (min-width: 992px) {
+	#title .top-cloud {
+		right: 2rem;
+		top: 6rem;
+	}
+}
+
+#title .top-cloud {
+	float: left;
+	right: 0;
+	top: 0;
+}
+
+#title .buttom-cloud {
+	left: 0;
+	bottom: 2em;
+}
+
+#title .cloud {
+	position: absolute;
+	background: url(/web/20180901170713im_/http://seanhalpin.io/assets/img/ui/cloud.svg) top left no-repeat;
+	width: 150px;
+	height: 45px;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	z-index: 980;
 }
 
 .buttom-container {
 	margin-top: 70px;
 	background-color: #c5ded7;
 	padding: 50px 0 20px;
-}
-
-.top-cloud {
-	position: absolute;
-	right: 300px;
-	top: 50px;
-}
-
-.buttom-cloud {
-	position: absolute;
-	left: 250px;
-	bottom: 300px;
 }
 
 .profile-pic {
@@ -120,6 +173,14 @@ a:hover {
 .skill-2 {
 	float: right;
 	margin-left: 30px;
+}
+
+.nav-list {
+	float: right;
+	display: flex;
+	list-style: none;
+	justify-content: start;
+	align-items: flex-start;
 }
 
 
@@ -138,6 +199,7 @@ a:hover {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+	transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
@@ -148,4 +210,5 @@ a:hover {
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+	transition: all 0.5s ease-in-out;
 }
